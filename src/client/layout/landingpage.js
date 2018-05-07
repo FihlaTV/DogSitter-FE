@@ -4,7 +4,7 @@ import Signupform from "../components/signup/signupform";
 import Header from "../components/header/header";
 import Main from "../components/main/main";
 
-class Landinpage extends Component {
+class Landingpage extends Component {
     render() {
         return (
             <div className="landingpage">
@@ -25,4 +25,4 @@ class Landinpage extends Component {
 }
 
 
-export default Landinpage;
+export default Landingpage;

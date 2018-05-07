@@ -39,8 +39,12 @@ class Header extends Component {
                     </div>
                 </nav>
             </div>
+
         );
+
+
     }
+
     handleSubmit = event => {
         event.preventDefault();
         let apiBaseUrl = "http://127.0.0.1:8000/UserProfile/";
@@ -55,14 +59,17 @@ class Header extends Component {
             data: payload
         }).done(function(response){
             //this.setShow=true;
-            debugger;
 
             $("#email_id").val('');
             $("#password").val('');
+            window.location = "/profile/";
+
+
+
+
         });
 
     }
-
 }
 
 export default Header;
