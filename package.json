@@ -10,9 +10,10 @@
     "react-bootstrap": "^0.32.1",
     "react-dom": "^16.3.1",
     "react-modal": "^3.4.4",
+    "react-router": "latest",
     "react-router-dom": "^4.2.2",
     "react-scripts": "1.1.4",
-    "react-router": "latest"
+    "react-validation": "^3.0.7"
   },
   "scripts": {
     "start": "react-scripts start",

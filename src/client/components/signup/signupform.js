@@ -113,7 +113,7 @@ class Signupform extends Component {
             password: password,
             role: role
         };
-       /* $.ajax({
+        $.ajax({
             url: apiBaseUrl+"addUserProfile/",
             type: "POST",
             data: payload
@@ -126,7 +126,7 @@ class Signupform extends Component {
                 $("#password").val('');
             alert("Thanks for Registering with us.");
 
-        });*/
+        });
 
     }
 }
