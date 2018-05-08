@@ -27,7 +27,7 @@ class HeaderProfile extends Component {
                         </ul>
                         <form className="form-inline my-2 my-lg-0 float-right">
 
-                            <input className="btn btn-danger " onClick={this.handleSubmit} type="submit" value="Logout"/>
+                            <input className="btn btn-danger " style={{"width":"100px","height":"40px","font-size":"15px","font-style":"bold"}} onClick={this.handleSubmit} type="submit" value="Logout"/>
                         </form>
                     </div>
                 </nav>
@@ -39,7 +39,7 @@ class HeaderProfile extends Component {
     }
 
     handleSubmit = event => {
-
+        window.location = "/login/";
     }
 }
 

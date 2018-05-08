@@ -72,7 +72,7 @@ class Profile extends Component {
                                 <div className="col-sm-3">
                                     <div className="rating-block">
                                         <h4>Average user rating</h4>
-                                        <h2 className="bold padding-bottom-7">4.3 <small>/ 5</small></h2>
+                                        <h2 className="bold padding-bottom-7">4 <small>/ 5</small></h2>
                                         <button type="button" className="btn btn-warning btn-sm"
                                                 aria-label="Left Align">
                                             <span className="glyphicon glyphicon-star" aria-hidden="true"></span>
@@ -85,7 +85,7 @@ class Profile extends Component {
                                                 aria-label="Left Align">
                                             <span className="glyphicon glyphicon-star" aria-hidden="true"></span>
                                         </button>
-                                        <button type="button" className="btn btn-default btn-grey btn-sm"
+                                        <button type="button" className="btn btn-warning btn-grey btn-sm"
                                                 aria-label="Left Align">
                                             <span className="glyphicon glyphicon-star" aria-hidden="true"></span>
                                         </button>
@@ -144,7 +144,7 @@ class Profile extends Component {
                                                 </div>
                                             </div>
                                         </div>
-                                        <div className="pull-right" style={{"margin-left":"10px"}}>0</div>
+                                        <div className="pull-right" style={{"margin-left":"10px"}}>1</div>
                                     </div>
                                     <div className="pull-left">
                                         <div className="pull-left" style={{"width":"35px", "line-height":"1"}}>
@@ -189,8 +189,8 @@ class Profile extends Component {
                                             <div className="col-sm-3">
                                                 <img src="http://dummyimage.com/60x60/666/ffffff&text=No+Image"
                                                      className="img-rounded"/>
-                                                    <div className="review-block-name"><a href="#">nktailor</a></div>
-                                                    <div className="review-block-date">January 29, 2016<br/>1 day ago
+                                                    <div className="review-block-name"><a href="#">Audrey</a></div>
+                                                    <div className="review-block-date">May 05, 2018<br/>1 day ago
                                                     </div>
                                             </div>
                                             <div className="col-sm-9">
@@ -210,7 +210,7 @@ class Profile extends Component {
                                                         <span className="glyphicon glyphicon-star"
                                                               aria-hidden="true"></span>
                                                     </button>
-                                                    <button type="button" className="btn btn-default btn-grey btn-xs"
+                                                    <button type="button" className="btn btn-warning btn-xs"
                                                             aria-label="Left Align">
                                                         <span className="glyphicon glyphicon-star"
                                                               aria-hidden="true"></span>
@@ -221,11 +221,13 @@ class Profile extends Component {
                                                               aria-hidden="true"></span>
                                                     </button>
                                                 </div>
-                                                <div className="review-block-title">this was nice in buy</div>
-                                                <div className="review-block-description">this was nice in buy. this was
-                                                    nice in buy. this was nice in buy. this was nice in buy this was
-                                                    nice in buy this was nice in buy this was nice in buy this was nice
-                                                    in buy
+                                                <div className="review-block-title">Avtar was AWESOME! </div>
+                                                <div className="review-block-description">Roo is a big dog with lots of energy and a real
+                                                    personality, and she had a blast with Avtar.
+                                                    It's easy to see that Avtar really loves dogs and is totally comfortable with big dogs.
+                                                    He sent tons of pics and definitely tired out Roo with dog park trips.
+                                                    He was flexible with pick up times and I came home to a very happy, tired dog.
+                                                    I can't wait to use Avtar again!
                                                 </div>
                                             </div>
                                         </div>
@@ -234,8 +236,8 @@ class Profile extends Component {
                                             <div className="col-sm-3">
                                                 <img src="http://dummyimage.com/60x60/666/ffffff&text=No+Image"
                                                      className="img-rounded"/>
-                                                    <div className="review-block-name"><a href="#">nktailor</a></div>
-                                                    <div className="review-block-date">January 29, 2016<br/>1 day ago
+                                                    <div className="review-block-name"><a href="#">Kate</a></div>
+                                                    <div className="review-block-date">May 04, 2018<br/>4 day ago
                                                     </div>
                                             </div>
                                             <div className="col-sm-9">
@@ -266,11 +268,13 @@ class Profile extends Component {
                                                               aria-hidden="true"></span>
                                                     </button>
                                                 </div>
-                                                <div className="review-block-title">this was nice in buy</div>
-                                                <div className="review-block-description">this was nice in buy. this was
-                                                    nice in buy. this was nice in buy. this was nice in buy this was
-                                                    nice in buy this was nice in buy this was nice in buy this was nice
-                                                    in buy
+                                                <div className="review-block-title">Just left my cocker spaniel with Avtar for a long weekend and it was a great experience-</div>
+                                                <div className="review-block-description"> He is very professional, responsible, communicative, and knowledgeable about/appreciative of dogs.
+                                                    I got regular updates about Hurley's walks and pics of him enjoying himself in Avtar’s beautiful apartment and hanging out with
+                                                    his dog, Gus.
+                                                    I'm not a super paranoid pet parent, but I will say that there have been times when I've left Hurley behind when
+                                                    I travel and had a sort of nervous feeling in the back of my mind for the entire trip, and that was definitely not the case
+                                                    this time! I highly recommend Avtar for a stress-free dog-sitting experience.
                                                 </div>
                                             </div>
                                         </div>
@@ -279,8 +283,8 @@ class Profile extends Component {
                                             <div className="col-sm-3">
                                                 <img src="http://dummyimage.com/60x60/666/ffffff&text=No+Image"
                                                      className="img-rounded"/>
-                                                    <div className="review-block-name"><a href="#">nktailor</a></div>
-                                                    <div className="review-block-date">January 29, 2016<br/>1 day ago
+                                                    <div className="review-block-name"><a href="#">Ryan</a></div>
+                                                    <div className="review-block-date">May 01,2018<br/>7 day ago
                                                     </div>
                                             </div>
                                             <div className="col-sm-9">
@@ -300,22 +304,23 @@ class Profile extends Component {
                                                         <span className="glyphicon glyphicon-star"
                                                               aria-hidden="true"></span>
                                                     </button>
-                                                    <button type="button" className="btn btn-default btn-grey btn-xs"
+                                                    <button type="button" className="btn btn-warning  btn-xs"
                                                             aria-label="Left Align">
                                                         <span className="glyphicon glyphicon-star"
                                                               aria-hidden="true"></span>
                                                     </button>
-                                                    <button type="button" className="btn btn-default btn-grey btn-xs"
+                                                    <button type="button" className="btn btn-warning btn-xs"
                                                             aria-label="Left Align">
                                                         <span className="glyphicon glyphicon-star"
                                                               aria-hidden="true"></span>
                                                     </button>
                                                 </div>
-                                                <div className="review-block-title">this was nice in buy</div>
-                                                <div className="review-block-description">this was nice in buy. this was
-                                                    nice in buy. this was nice in buy. this was nice in buy this was
-                                                    nice in buy this was nice in buy this was nice in buy this was nice
-                                                    in buy
+                                                <div className="review-block-title">Would give 6 stars if I could. </div>
+                                                <div className="review-block-description">My dog is nervous and really doesn’t like being away
+                                                    from me, she isn’t used to being around other dogs either, but
+                                                    Avtar’s experience with similar dogs put her right at ease.
+                                                    I've had a few inexperienced sitters on Dog Sitter, but this is not one of them.
+                                                    Highly recommend.
                                                 </div>
                                             </div>
                                         </div>
