@@ -29,7 +29,7 @@ class Feedback extends Component {
 
         };
         $.ajax({
-            url: apiBaseUrl+"login/",
+            url: apiBaseUrl+"feedback/",
             type: "POST",
             data: payload
         }).done(function(response){
@@ -55,14 +55,14 @@ class Feedback extends Component {
                             <div className="row margin-top-15">
                                 <div className="col-md-6">
                                     <div className="form-group">
-                                        <input type="text" className="form-control" name="Name" autoComplete="off" id="Name"
+                                        <input type="text" className="form-control" name="Name" autoComplete="off" id="firstName"
                                                placeholder="First Name"/>
                                     </div>
                                 </div>
                                 <div className="col-md-6">
                                     <div className="form-group">
                                         <input type="text" className="form-control" name="lastName" autoComplete="off"
-                                               id="email" placeholder="Last Name"/>
+                                               id="lastName" placeholder="Last Name"/>
                                     </div>
                                 </div>
                             </div>

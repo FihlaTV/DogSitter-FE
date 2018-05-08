@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 
 import "../../layout/layout.css";
 import $ from "jquery";
+import {Link} from "react-router-dom";
 
 
 
@@ -27,7 +28,10 @@ class HeaderProfile extends Component {
                         </ul>
                         <form className="form-inline my-2 my-lg-0 float-right">
 
-                            <input className="btn btn-danger " style={{"width":"100px","height":"40px","font-size":"15px","font-style":"bold"}} onClick={this.handleSubmit} type="submit" value="Logout"/>
+                            <button className="btn btn-danger " style={{"width":"100px","height":"40px","font-size":"15px","font-style":"bold"}} onClick={this.handleSubmit} type="submit" >
+                                <Link to="/"  style={{ "textDecoration": "none", "color": "white"}} >Logout</Link>
+                            </button>
+
                         </form>
                     </div>
                 </nav>
@@ -38,9 +42,9 @@ class HeaderProfile extends Component {
 
     }
 
-    handleSubmit = event => {
-        window.location = "/login/";
-    }
+    // handleSubmit = event => {
+    //     window.location = "/login/";
+    // }
 }
 
 export default HeaderProfile;
