@@ -12,7 +12,7 @@ class Header extends Component {
     render() {
         return (
             <div>
-                <nav className="navbar navbar-expand-lg navbar-light">
+                <nav className="navbar navbar-expand-lg navbar-light fixed-top">
                     <a className="navbar-brand text-white" href="#">
                         <img src="http://webpage.pace.edu/ab85414n/dogsitter/logo.png" className="d-inline-block align-top" alt/>
                     </a>
@@ -25,20 +25,20 @@ class Header extends Component {
                         <ul className="navbar-nav mr-auto ">
 
                         </ul>
-                        <form className="form-inline my-2 my-lg-0 float-right">
-                            <input className="form-control mr-sm-2" id="email_id" type="text" placeholder="Username or Email"
+                        <form className="form-inline my-2 my-lg-0 float-right" style={{"padding":"20px"}}>
+                            <input className="form-control mr-sm-2 input-height40" style={{"width": "180px"}} id="email_id" type="text" placeholder="Username or Email"
                                    aria-label="Search"/>
-                            <input className="form-control mr-sm-2" id="password" type="password" placeholder="Password"
+                            <input className="form-control mr-sm-2 input-height40" style={{"width": "180px"}} id="password" type="password" placeholder="Password"
                                    aria-label="Search"/>
-                            <fieldset>
-                                <label className="checkbox inline">
-                                    <input type="checkbox" defaultValue="remember-me" />&nbsp;&nbsp;<span className="text-white">Remember me
+                            <fieldset style={{"width": "120PX","margin-left": "9px"}}>
+                                <label className="checkbox inline"  style={{"position": "fixed","top": "25px"}}>
+                                    <input type="checkbox" defaultValue="remember-me" />&nbsp;&nbsp;<span style={{"position": "fixed", "top": "27px", "display": "inline","font-size": "11px"}}className="text-white">Remember me
                                 </span>
                                 </label>
-                                <a className="help-inline" href="#">Forgot password?</a>
+                                <a  style={{"margin-left": "14px","position": "fixed","top": "44px","font-size": "11px"}}className="help-inline" href="#">Forgot password?</a>
                             </fieldset>
                             &nbsp;&nbsp;
-                            <input className="btn btn-danger my-2 my-sm-0" onClick={this.handleSubmit} type="submit" value="Login"/>
+                            <input className="btn btn-danger " style={{"width":"80px","height":"30px","font-size":"15px","font-style":"bold"}} onClick={this.handleSubmit} type="submit" value="Login"/>
                         </form>
                     </div>
                 </nav>
