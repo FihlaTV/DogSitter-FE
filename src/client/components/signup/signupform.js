@@ -18,27 +18,28 @@ class Signupform extends Component {
                     <fieldset>
                         <legend>Sign Up</legend>
                         <div className="form-group">
-                            <input type="text" className="form-control input-height40" id="firstName"
+                            <input type="text" required className="form-control input-height40" id="firstName"
                                    placeholder="First Name"/>
                         </div>
                         <div className="form-group">
-                            <input type="text" className="form-control input-height40" id="lastName"
+                            <input type="text" required className="form-control input-height40" id="lastName"
                                    placeholder="Last Name"/>
                         </div>
                         <div className="form-group">
-                            <input type="email" className="form-control" id="email_id input-height40"
-                                   aria-describedby="emailHelp" placeholder="Email address"/>
+
+                            <input type="text" required className="form-control input-height40" id="emailid"
+                                   placeholder="Email address"/>
                         </div>
                         <div className="form-group">
-                            <input type="password" className="form-control input-height40" id="password"
+                            <input type="password" required className="form-control input-height40" id="password"
                                    placeholder="Password"/>
                         </div>
                         <div className="form-group">
-                            <input type="text" className="form-control input-height40" id="address"
+                            <input type="text" required className="form-control input-height40" id="address"
                                    placeholder="Address"/>
                         </div>
                         <div className="form-group">
-                            <select type="role" placeholder="role" id="role" className="form-control input-height40">
+                            <select type="role" required placeholder="role" id="role" className="form-control input-height40">
                                 <option value="Dog Sitter">Dog Sitter</option>
                                 <option value="Dog Owner">Dog Owner</option>
                             </select>
@@ -46,6 +47,14 @@ class Signupform extends Component {
                         <input type="submit" className="btn btn-primary" style={{"width":"80px","height":"30px","font-size":"15px","font-style":"bold"}} value="Sign Up" onClick={this.handleSubmit}/>
                     </fieldset>
                 </form>
+                <div style={{"display":"none"}}>
+                    <div className="alert alert-warning alert-dismissible fade show" role="alert">
+                        <button type="button" className="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <strong>Alert!!</strong> <div id="alert_text"></div>
+                    </div>
+                </div>
                 <Modal show={this.setState.show} onHide={this.handleClose}>
                     <Modal.Header closeButton>
                         <Modal.Title>Modal heading</Modal.Title>
@@ -67,16 +76,44 @@ class Signupform extends Component {
     }
     handleSubmit = event => {
         event.preventDefault();
+        let firstName =  $("#firstName").val();
+        let lastName =  $("#lastName").val();
+        let email_id =  $("#emailid").val();
+        let address =  $("#address").val();
+        let password =  $("#password").val();
+        let role =  $("#role").val();
+
+        if (firstName==''){
+            alert("First Name Cannot be empty");
+            return false;
+
+        }
+
+        if (lastName==''){
+            alert("Last Name Cannot be empty");
+            return false;
+        }
+        if (address==''){
+            alert("Email Cannot be empty");
+            return false;
+        }
+        if (password==''){
+            alert("Email Cannot be empty");
+            return false;
+        }
+
+
+
         let apiBaseUrl = "http://127.0.0.1:8000/UserProfile/";
         const payload = {
-            firstName: $("#firstName").val(),
-            lastName: $("#lastName").val(),
-            email_id: $("#email_id").val(),
-            address: $("#address").val(),
-            password: $("#password").val(),
-            role: $("#role").val()
+            firstName: firstName,
+            lastName: lastName,
+            email_id: email_id,
+            address: address,
+            password: password,
+            role: role
         };
-        $.ajax({
+       /* $.ajax({
             url: apiBaseUrl+"addUserProfile/",
             type: "POST",
             data: payload
@@ -89,7 +126,7 @@ class Signupform extends Component {
                 $("#password").val('');
             alert("Thanks for Registering with us.");
 
-        });
+        });*/
 
     }
 }
